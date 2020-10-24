@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>My First webpage</title>
+		<style type="text/css">
+			h1{
+				color: blue;
+				font-size: 12px;
+			}
+
+			#para1{
+				text-align: center;
+				color: red;
+			}
+
+			.center{
+				text-align:center;
+				color: pink;
+			}
+
+			#box{
+				position: static;
+				padding: 5px;
+				border: 2px solid black;
+			
+				height: 200px;
+
+			}
+			#p2{
+				position: absolute;
+		
+				height: 100px;
+				background: red;
+				
+			}
+
+		</style>
+	</head>
+		<body>
+				<h1>My Webpage</h1>
+				<img src="C:\Users\Gary Senoc\Pictures\a.png" alt="4 persons"><br>
+				<a href="https://www.facebook.com/garylloyd.senoc">My facebook link</a>
+				<h1 class="center">This is header 1</h1>
+				<h1>This is header 1</h1>
+				<h2>This is header 2</h2>
+				<h3>This is header 3</h3>
+				<h4>This is header 4</h4>
+				<h5>This is header 5</h5>
+				<h6>This is header 6</h6>
+				<p>This is a paragraph</p>
+
+				<div>
+					<p id="para1">This is a 1st paragraph</p>
+				</div>
+				<div>
+					<p>This is a 2nd paragraph</p>
+				</div>
+
+				<button>This is a button</button>
+				<hr size="5px">
+				<div>
+					<h1>This is an example of Ordered list</h1>
+					<ol>
+						<li>I sleep</li>
+						<br>
+						<br>
+
+						<li>I Eat</li>
+						<li>I drink</li>
+						<li>I code</li>
+						<li>I watch</li>
+					</ol>
+				</div>
+				<h4>
+					
+				<div id="box">
+					Sample content
+					<p>hahahahahaha</p>
+					<p id="p2">
+					Sample content 2
+					</p>
+					<p>huhuhuhuhu</p>
+				</div>
+				<p id="school">What school?</p>
+				<button type="button" onclick="myFunction();">Click here</button>
+
+					<h1>This is an example of Unordered list</h1>
+					<ul>
+						<li>I sleep</li>
+						<li>I Eat</li>
+						<li>I drink</li>
+						<li>I code</li>
+						<li>I watch</li>
+					</ul>
+					<script>
+function myFunction() {
+  document.getElementById("school").innerHTML = "Cebu Institute of Technology - Univesity";
+
+  document.getElementById("school").style.fontSize= "50px";
+
+}
+</script>
+
+<script type="text/javascript">
+	
+	function isPositive(a) {
+		return (a>0) ? "positve" : "negative";
+	}
+	document.write(isPositive(-3));
+</script>
+		</body>
+</html>
