@@ -1,112 +1,171 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>My First webpage</title>
-		<style type="text/css">
-			h1{
-				color: blue;
-				font-size: 12px;
-			}
 
-			#para1{
-				text-align: center;
-				color: red;
-			}
+<head>
+	<title>CSS Example - Main Page</title>
+	<link href='styles.css' type='text/css' rel='stylesheet' />
+	<script src="https://kit.fontawesome.com/1242ab5401.js" crossorigin="anonymous"></script>
+</head>
 
-			.center{
-				text-align:center;
-				color: pink;
-			}
+<body>
+	<header>
+		<div class="container">
+			<div id="branding">
+				<h1> My Portfolio</h1>
+			</div>
+			<nav>
+				<ul>
+					<li class="current"><a href="index.html">Home</a></li>
+					<li><a href="education.html">Education</a></li>
+					<li><a href="contact.html">Contact Me</a></li>
+				</ul>
+			</nav>
+		</div>
+	</header>
 
-			#box{
-				position: static;
-				padding: 5px;
-				border: 2px solid black;
-			
-				height: 200px;
+	<div class="row" style="min-height: 90vh; background-color:#ffffff;">
 
-			}
-			#p2{
-				position: absolute;
-		
-				height: 100px;
-				background: red;
-				
-			}
+		<div class="column" style="background-color:#aaa; margin-left:140px;">
+			<div>
+				<p class=" mes"
+					style="float: left; ; color: #4284F3;font-size:65px; text-align: center; font-weight: bold; margin-top: 150px; margin-left:10px;">
+					Hey
+					there! I am Gary!<br><span
+						style="color:#3E3E3E; font-size:22px; font-weight: normal; text-align: left;">I
+						am glad that
+						you're here and nice to meet you!
+					</span>
+				</p>
+			</div>
+			<img src="img/pic.jpg" alt="" style="float:right; height:300px; margin-top: 100px; margin-right:100px">
+		</div>
+	</div>
+	<div class="container" style="width:100%;min-height: 100vh;background:#F9F9F9;">
+		<h1 style="text-align:center; font-size:50px; margin-top: 80px; color: #4284F3;">About me</h1>
+		<section id=" showcase">
 
-		</style>
-	</head>
-		<body>
-				<h1>My Webpage</h1>
-				<img src="C:\Users\Gary Senoc\Pictures\a.png" alt="4 persons"><br>
-				<a href="https://www.facebook.com/garylloyd.senoc">My facebook link</a>
-				<h1 class="center">This is header 1</h1>
-				<h1>This is header 1</h1>
-				<h2>This is header 2</h2>
-				<h3>This is header 3</h3>
-				<h4>This is header 4</h4>
-				<h5>This is header 5</h5>
-				<h6>This is header 6</h6>
-				<p>This is a paragraph</p>
+			<div class="container">
+				<article id="main-col" style="margin-left: 18%;">
+					<ul id="services" style="color:#3E3E3E;">
+						<li>
+							<p style="	font-weight: 500; font-size:2rem; margin-top: -4px;">About</p>
+							<p> I am a 2nd year student of BS Computer Science in Cebu Institute of Technology.
 
-				<div>
-					<p id="para1">This is a 1st paragraph</p>
-				</div>
-				<div>
-					<p>This is a 2nd paragraph</p>
-				</div>
+								I am a DSC Lead, Microsoft Learn Student Ambassador, Active Volunteer to our Dept.
+								organization - Computer Student Society, student innovator, technopreneur and tech
+								enthusiast.
+							</p>
+						</li>
+						<li>
+							<p style="font-weight: 500; font-size:2rem; margin-top: -4px;">Experience</p>
+							<img class="imahe" src="img/pic.jpg" alt="" style="float:left; padding-right:10px;">
+							<p><b>DSC Lead</b><br>
+								Google Developers Group <br>
+								<span style="color: rgb(208, 199, 200);"> July 2020- Present • 5 mos <br>Cebu City,
+									Central Visayas</span>
+							</p>
+							<hr>
+							<img class="imahe" src="img/pic.jpg" alt="" style="float:left; padding-right:10px;">
+							<p><b>Volunteer</b><br>
+								Google Developers Group Philippines <br>
+								<span style="color: rgb(208, 199, 200);"> Sept. 2020- Present • 3 mos
+									<br> Manila,National Capital Region, Philippines</span>
+							</p>
+						</li>
 
-				<button>This is a button</button>
-				<hr size="5px">
-				<div>
-					<h1>This is an example of Ordered list</h1>
-					<ol>
-						<li>I sleep</li>
-						<br>
-						<br>
 
-						<li>I Eat</li>
-						<li>I drink</li>
-						<li>I code</li>
-						<li>I watch</li>
-					</ol>
-				</div>
-				<h4>
-					
-				<div id="box">
-					Sample content
-					<p>hahahahahaha</p>
-					<p id="p2">
-					Sample content 2
-					</p>
-					<p>huhuhuhuhu</p>
-				</div>
-				<p id="school">What school?</p>
-				<button type="button" onclick="myFunction();">Click here</button>
 
-					<h1>This is an example of Unordered list</h1>
-					<ul>
-						<li>I sleep</li>
-						<li>I Eat</li>
-						<li>I drink</li>
-						<li>I code</li>
-						<li>I watch</li>
+						<li>
+							<p style="	font-weight: 500; font-size:23px; margin-top: -4px; margin-bottom: -2px;">
+								Accomplishments</p>
+							<p><b>Zoohackathon Southeast Asia 2020 - Philippine Representative</b><br>
+								Nov 2020 honor • U.S. Department of State <br><br>
+								Zoohackathon 2020 is a global competition run by the U.S. Department of State that
+								harnesses the power of technological innovation and the raising of public awareness
+								to
+								combat wildlife trafficking. It brings together coders, university students,
+								wildlife
+								conservation experts, zoos, and other academic and nongovernmental organizations to
+								develop wire-frame/demo technology solution ideas over 2.5 days.
+
+
+							</p>
+							<hr>
+							<p><b>Impact Hackathon - National Finalist</b><br>
+								Aug 2020 • Impact Hub Manila <br><br>
+								Impact Hackathon Online 2020 aims to create sustainable digital solutions through a
+								5-day virtual hackathon. The event focuses on helping the country reboot its economy
+								given the ongoing health crisis – COVID 19 through digitization.
+							</p>
+							<hr>
+							<p><b>Microsoft Learn Student Ambassador</b><br>
+								Jan 2020 • Microsoft <br><br>
+								Learn Student Ambassadors are a global group of campus leaders who are eager to help
+								fellow students, create robust tech communities and develop technical and career
+								skills
+								fot the future.
+							</p>
+							<hr>
+							<p><b>Impact Hackathon - National Finalist</b><br>
+								Nov 2019 • Impact Hub Manila <br><br>
+								Impact Hackathon is the banner event of Impact Hub Manila that served as a passion
+								project of the organization. It aims to create sustainable digital solutions through
+								a
+								24-hr reverse hackathon where problem statements from respectable partners are
+								hacked by
+								innovators across the Philippines.
+							</p>
+							<hr>
+							<p><b>Pitch Perfect 2019 - Audience Choice Award</b><br>
+								Nov 2019 • Impact Hub Manila <br><br>
+								Pitch Perfect is a pitching competition that gives CIT-U innovators the opportunity
+								to
+								hone their presentation skills, build confidence and present their ideas in a
+								limited
+								time to an audience for the opportunity to win prizes. The Competition is intended
+								as a
+								vehicle to encourage students not only to develop their communication skills but
+								also to
+								validate an idea in a competitive environment.
+							</p>
+							<hr>
+							<p><b>Trend Micro University CTF (Capture The Flag) - 2019 - 1st place - Visayas Online
+									Qualifier (Regional) - National Qualifier</b><br>
+								Sept 2019 • Trend Micro <br><br>
+								University CTF (Capture the Flag) is an organized contest by Trend Micro that
+								invites
+								and promotes cybersecurity among college students all over the Philippines. The game
+								will be having two rounds, both to be conducted online: the Qualifying Round and the
+								Final Round. The Qualifying Round will be a Jeopardy-inspired Q&A game where
+								participants solve problems from various categories. The top three teams in the
+								Qualifying Round for each area will advance to the Final Round. The Final Round will
+								follow an online-challenge format.
+							</p>
+							<hr>
+							<p><b>Academic Excellence Award - with High Honors</b><br>
+								Apr 2018 • AMA Computer Learning Center - Department of Education <br><br>
+								At the end of the school year, the Academic Excellence Award is given to learners
+								from
+								grade 1 to 12 who have attained a General Average of at least 90 passing Final Grade
+								in
+								all learning areas.
+							</p>
+						</li>
+
 					</ul>
-					<script>
-function myFunction() {
-  document.getElementById("school").innerHTML = "Cebu Institute of Technology - Univesity";
+				</article>
+			</div>
+		</section>
+	</div>
 
-  document.getElementById("school").style.fontSize= "50px";
 
-}
-</script>
 
-<script type="text/javascript">
-	
-	function isPositive(a) {
-		return (a>0) ? "positve" : "negative";
-	}
-	document.write(isPositive(-3));
-</script>
-		</body>
+	<footer>
+		<a href="https://www.facebook.com/garylloyd.senoc"> <i class="fab fa-facebook-square fa-2x"></i></a>
+		<a href="https://www.linkedin.com/in/garysenoc/"><i class="fab fa-linkedin fa-2x"></i></a>
+		<a href="https://github.com/garysenoc"><i class="fab fa-github-square fa-2x"></i></a>
+		<p>Gary Lloyd Senoc,Copyright &copy; 2020</p>
+	</footer>
+</body>
+
 </html>
